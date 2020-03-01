@@ -48,6 +48,9 @@
     .form{
         margin-bottom: 30px;
     }
+    .advantages{
+        max-width: 100%;
+    }
     .advantages__inner{
         display: block;
     }
@@ -106,6 +109,9 @@
     
     .menu li + li{
         padding-left: 0px;
+    }
+    .advantages{
+        min-width: 100%;
     }
     
 }
