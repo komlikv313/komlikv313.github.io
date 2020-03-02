@@ -320,12 +320,19 @@
 <!--Всплывающая форма заказа-->    
 <div id="modal">
     <form action="mail.php" method="POST">
-        <input type="text" name="user_name" placeholder="Ваше имя">
-        <input type="text" name="user_phone" placeholder="Ваш контактный телефон">
-        <input type="text" name="date_of_transfer" placeholder="Дата поездки">
-        <input type="text" name="meeting_place" placeholder="Место встречи с водителем">
-        <input type="text" name="destination_place" placeholder="Место высадки">
-        <input type="text" name="user_comments" placeholder="Комментарии к заказу">
+        
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="mytransfer.pro">
+        <input type="hidden" name="admin_email" value="freelance.vk@yandex.by">
+        <input type="hidden" name="form_subject" value="Заказ трансфера">
+        <!-- END Hidden Required Fields -->
+
+        <input type="text" name="Имя" placeholder="Ваше имя">
+        <input type="text" name="Телефон" placeholder="Ваш контактный телефон">
+        <input type="text" name="Дата трансфера" placeholder="Дата поездки">
+        <input type="text" name="Место встречи" placeholder="Место встречи с водителем">
+        <input type="text" name="Место высадки" placeholder="Место высадки">
+        <input type="text" name="Комментарии" placeholder="Комментарии к заказу">
         <input type="submit" value="Отправить">
     </form>
 </div>   
@@ -335,6 +342,7 @@
 <!--Подключение JS плагинов-->    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/script.mail.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
