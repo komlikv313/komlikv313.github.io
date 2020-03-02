@@ -10,15 +10,20 @@
     .form__inner{
         background-image: none;
     }
+    .about__top{
+        display: block;
+    }
+    .about-btn{
+        text-align: center;
+    }
+    
 }
 
 @media (max-width: 900px){
     .slick-btn{
         display: none !important;
     }
-    .about__top{
-        display: block;
-    }
+    
     .about__title-box, form__title-box{
         padding-left: 0;
         text-align: center;
@@ -28,9 +33,7 @@
     .form__title-box{
         display: none;
     }
-    .about-btn{
-        text-align: center;
-    }
+    
     .form__box-inner{
         display: block;
     }
@@ -66,6 +69,7 @@
     .footer__map{
         max-width: 100%;
     }
+    
 }
 
 @media (max-width: 700px){
