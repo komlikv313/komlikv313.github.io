@@ -204,7 +204,7 @@ ul li {
 .footer__contacts {
   display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 50%;
   align-items: center;
 }
